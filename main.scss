@@ -1,0 +1,87 @@
+@import 'config';
+
+// ================== Header ===========================
+
+$font-color: #5b5a5a;
+$hover-color: #755def;
+
+.navbar-nav {
+  .nav-link {
+    margin: 20px 40px 5px 40px !important;
+    color: $font-color !important;
+  }
+  .active a {
+    color: $hover-color !important;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 18px;
+  }
+}
+
+// ===================== Hero =======================
+
+.hero {
+  .carousel-item img {
+    height: 80vh;
+    filter: brightness(50%);
+    background-size: cover;
+  }
+
+  .carousel-caption {
+    width: 35%;
+    line-height: 1 !important;
+    top: 120px;
+    left: 10%;
+    padding: 0;
+    text-align: start;
+  }
+  h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+    font-weight: 700 !important;
+  }
+}
+
+// =================== Registration =====================
+
+.registration {
+  background-color: #f2f3f5;
+  h1 {
+    font-size: 35px;
+    color: $font-color;
+    padding: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .form-group {
+    justify-content: center;
+
+    .active {
+      border: 2px solid #99ccff;
+    }
+    .success {
+      border: 2px solid #66cc66;
+    }
+    .danger {
+      border: 2px solid #ba122b;
+      ::placeholder {
+        color: #ba122b;
+        opacity: 1;
+      }
+    }
+  }
+}
+.card {
+  align-items: center;
+  border: none;
+  background-color: #f2f3f5;
+
+  .card-header {
+    background-color: #f2f3f5;
+    border: none;
+  }
+}
+
+// ================================ Terms and Conditions ===================================
