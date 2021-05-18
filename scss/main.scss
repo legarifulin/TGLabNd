@@ -126,6 +126,16 @@ $hover-color: #755def;
     .form-check-label {
       font-weight: 400;
       font-size: 14px;
+
+      a {
+        text-decoration: underline;
+        color: #5335eb;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
     .button {
       margin-right: 30px;
