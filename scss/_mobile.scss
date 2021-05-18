@@ -1,0 +1,63 @@
+// Widescreens
+
+@include mediaXL {
+}
+
+// Desktops & Laptops
+
+@include mediaLg {
+  .carousel-caption {
+    width: 60% !important;
+  }
+}
+
+// Tablets & Small Laptops
+
+@include mediaMd {
+}
+
+@include mediaM {
+  .hero {
+    .carousel-item img {
+      height: 70vh !important;
+    }
+    .carousel-caption {
+      width: 80% !important;
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+// Phones
+
+@include mediaSm {
+  .header {
+    padding-bottom: 20px;
+  }
+
+  .hero {
+    .carousel-item img {
+      height: 70vh !important;
+    }
+    .carousel-caption {
+      top: 70px;
+      width: 70% !important;
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  .tabs {
+    .tabs-items {
+      .butn {
+        margin: 10px !important;
+
+        &.active {
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+}
