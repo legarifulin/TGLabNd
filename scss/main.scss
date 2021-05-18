@@ -56,6 +56,10 @@ $hover-color: #755def;
   .container {
     max-width: 500px;
 
+    .form-control-lg {
+      font-size: 1rem;
+    }
+
     h1 {
       font-size: 35px;
       color: $font-color;
