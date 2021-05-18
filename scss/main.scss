@@ -92,11 +92,12 @@ $hover-color: #755def;
 
     .tabs-items {
       border-bottom: 1px solid #b2b2b2;
-      padding: 15px;
+      padding-bottom: 15px;
+      padding-top: 15px;
       .butn {
         margin-right: 80px;
         padding-bottom: 15px;
-        color: #755def;
+        color: #5335eb;
         text-decoration: none;
 
         &.active {
@@ -116,25 +117,29 @@ $hover-color: #755def;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    padding-left: 2.5rem;
 
     .form-check-label {
       font-weight: 400;
       font-size: 14px;
     }
-  }
-  .btn {
-    font-size: 15px;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    background-color: #5335eb;
-    margin-top: 30px;
-    width: 160px;
-    border-radius: 50px;
-    transition: linear 0.2s;
+    .button {
+      margin-right: 30px;
+    }
+    .btn {
+      font-size: 15px;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      background-color: #5335eb;
+      margin-top: 30px;
+      width: 160px;
+      border-radius: 50px;
+      transition: linear 0.2s;
 
-    &:hover {
-      background-color: $hover-color;
+      &:hover {
+        background-color: $hover-color;
+      }
     }
   }
 }
