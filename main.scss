@@ -5,21 +5,26 @@
 $font-color: #5b5a5a;
 $hover-color: #755def;
 
-.navbar-nav {
-  .nav-link {
-    margin: 20px 40px 5px 40px !important;
-    color: $font-color !important;
+.header {
+  .row {
+    // justify-content: center;
   }
-  .active a {
-    color: $hover-color !important;
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 18px;
+  .navbar-nav {
+    .nav-link {
+      margin: 20px 40px 5px 40px !important;
+      color: $font-color !important;
+    }
+    .active a {
+      color: $hover-color !important;
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-thickness: 4px;
+      text-underline-offset: 18px;
+    }
   }
 }
 
-// ===================== Hero =======================
+// ===================== Hero =======================s
 
 .hero {
   .carousel-item img {
@@ -32,7 +37,7 @@ $hover-color: #755def;
     width: 35%;
     line-height: 1 !important;
     top: 120px;
-    left: 10%;
+    left: 18%;
     padding: 0;
     text-align: start;
   }
@@ -47,41 +52,88 @@ $hover-color: #755def;
 
 .registration {
   background-color: #f2f3f5;
-  h1 {
-    font-size: 35px;
-    color: $font-color;
-    padding: 30px;
-    text-align: center;
-    font-weight: 600;
+  .container {
+    max-width: 500px;
+
+    h1 {
+      font-size: 35px;
+      color: $font-color;
+      padding: 30px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .form-group {
+      justify-content: center;
+
+      .active {
+        border: 2px solid #99ccff;
+      }
+      .success {
+        border: 2px solid #66cc66;
+      }
+      .danger {
+        border: 2px solid #ba122b;
+        ::placeholder {
+          color: #ba122b;
+          opacity: 1;
+        }
+      }
+    }
   }
 
-  .form-group {
-    justify-content: center;
+  //   ============ Tabs ===============
 
-    .active {
-      border: 2px solid #99ccff;
+  .tabs {
+    .row {
+      justify-content: center;
     }
-    .success {
-      border: 2px solid #66cc66;
+
+    .tabs-items {
+      border-bottom: 1px solid #b2b2b2;
+      padding-bottom: 10px;
+      .butn {
+        margin-right: 80px;
+        padding-bottom: 10px;
+        color: #755def;
+        text-decoration: none;
+
+        &.active {
+          border-bottom: 5px solid #5335eb !important;
+        }
+      }
     }
-    .danger {
-      border: 2px solid #ba122b;
-      ::placeholder {
-        color: #ba122b;
-        opacity: 1;
+  }
+  .card {
+    background-color: #f2f3f5 !important;
+    border: none !important;
+  }
+
+  // =================== Form check ==================
+
+  .form-check {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .form-check-label {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .btn {
+      font-size: 15px;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      margin-top: 30px;
+      border-radius: 50px;
+      transition: linear 0.2s;
+
+      &:hover {
+        background-color: $hover-color;
       }
     }
   }
 }
-.card {
-  align-items: center;
-  border: none;
-  background-color: #f2f3f5;
-
-  .card-header {
-    background-color: #f2f3f5;
-    border: none;
-  }
-}
-
-// ================================ Terms and Conditions ===================================
